@@ -46,10 +46,10 @@ public class RedisUtils {
 						//处理超时订单
 						System.out.println(sdf.format(new Date())+"["+Thread.currentThread()+"] 从redis中拿到一个超时任务[key:"+key+", score:"+score+", member:"+element+"]");
 					}else{
-						System.out.println(sdf.format(new Date())+"["+Thread.currentThread()+"] 任务被其他服务消费了");
+//						System.out.println(sdf.format(new Date())+"["+Thread.currentThread()+"] 任务被其他服务消费了");
 					}
 				}else{
-					System.out.println(sdf.format(new Date())+"["+Thread.currentThread()+"] 当前没有超时的订单");
+//					System.out.println(sdf.format(new Date())+"["+Thread.currentThread()+"] 当前没有超时的订单");
 					try {
 						Thread.sleep(500);
 					} catch (InterruptedException e) {
@@ -57,7 +57,7 @@ public class RedisUtils {
 					}
 				}
 			}else{
-				System.out.println("当前redis中没有可以操作的数据");
+//				System.out.println("当前redis中没有可以操作的数据");
 				try {
 					Thread.sleep(100);
 				} catch (InterruptedException e) {

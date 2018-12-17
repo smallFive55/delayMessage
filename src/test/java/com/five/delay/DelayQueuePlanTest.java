@@ -4,16 +4,14 @@ import java.util.concurrent.DelayQueue;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.test.context.ContextConfiguration;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.test.context.transaction.TransactionConfiguration;
 
 import com.five.delay.plan.DelayQueuePlan;
 import com.five.delay.utils.MyDelayed;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations={"classpath:spring-servlet.xml"})
-@TransactionConfiguration(defaultRollback=true)
+@SpringBootTest(classes=DelayMessageApplication.class)
 public class DelayQueuePlanTest {
 
 	@Test

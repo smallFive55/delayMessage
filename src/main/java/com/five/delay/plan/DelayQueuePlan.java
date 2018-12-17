@@ -4,8 +4,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.DelayQueue;
 
+import org.springframework.stereotype.Service;
+
 import com.five.delay.utils.MyDelayed;
 
+@Service
 public class DelayQueuePlan {
 
 	public static void main(String[] args) {

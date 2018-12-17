@@ -18,7 +18,7 @@ public class RedisDelayPlan {
 	public void product(){
 		String orderId="OIDNO1000";
 		for (int i = 0; i < 20; i++) {
-			redis.addItem(key, CalendarUtils.getCurrentTimeInMillis(60), orderId+String.format("%1$02d", i));
+			redis.addItem(key, CalendarUtils.getCurrentTimeInMillis(10), orderId+String.format("%1$02d", i));
 		}
 	}
 	
