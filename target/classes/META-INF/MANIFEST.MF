@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: delayMessage
-Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: luopeng
-Implementation-Vendor-Id: com.five
-Build-Jdk: 1.8.0_144
-Implementation-URL: http://maven.apache.org
-Created-By: Maven Integration for Eclipse
-
