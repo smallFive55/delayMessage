@@ -357,7 +357,7 @@ public class MQBusiness {
 **优点：**
 解耦、异常恢复、支持分布式/集群环境；  
 **缺点：**
-增加Redis维护、占用宽带、增加异常处理；
+增加Redis维护、占用宽带、代码逻辑稍显复杂、轮训增加Redis压力；
 
 ### RabbitMQ
 
