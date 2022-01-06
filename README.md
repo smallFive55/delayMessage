@@ -357,7 +357,7 @@ public class MQBusiness {
 **优点：**
 解耦、异常恢复、支持分布式/集群环境；  
 **缺点：**
-增加Redis维护、占用宽带、代码逻辑稍显复杂、轮询增加Redis压力；
+增加Redis维护、占用宽带、代码逻辑稍显复杂、轮询增加Redis压力； （备注：针对缺点，最近在思考的一个项目[输入链接说明](https://gitee.com/smallfive55/redis-delay-handler)，欢迎感兴趣的小伙伴一起参与）
 
 ### RabbitMQ
 
